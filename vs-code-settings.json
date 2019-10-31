@@ -1,0 +1,14 @@
+{
+    "workbench.colorCustomizations": {
+        "[Monokai]": {
+            "sideBar.background": "#000",
+            "editor.background": "#000",
+            "badge.background":"#000",
+            "breadcrumb.background": "#000",
+            "sideBarSectionHeader.background": "#000",
+            "statusBar.background": "#000",
+            "activityBar.background": "#0f0f0f",
+            "breadcrumb.foreground": "#777777"
+        }
+    }
+} 
