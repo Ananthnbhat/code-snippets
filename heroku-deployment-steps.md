@@ -1,3 +1,4 @@
+## First time deployment
 ### First create a git repo & .gitignore file and include what is necessary in that file
 
 ```
@@ -13,12 +14,22 @@ git commit -m “first commit”
 ### Run following commands in the CLI: 
 
 ```
-heroku login```
-```heroku create```
+heroku login
+```
+```
+heroku create
+```
 
-(this will show 2 endpoints - first one is where our code is deployed in heroku snd 2nd one is where we need to do git remote add heroku URL and then do git push heroku master )
+(this will show 2 endpoints - first one is where our code is deployed in heroku snd 2nd one is the git repo where Heroku deploys our code )
 ```
 git remote add heroku 2nd URL
 git push heroku master
 ```
 	
+## Subsequent deployments
+
+```
+git add .
+git commit -m "second commit"
+git push heroku master
+```
