@@ -20,7 +20,7 @@ heroku login
 heroku create
 ```
 
-(this will show 2 endpoints - first one is where our code is deployed in heroku snd 2nd one is the git repo where Heroku deploys our code )
+This will show 2 endpoints - first one is where our code is deployed in heroku snd 2nd one is the git repo where Heroku deploys our code.
 ```
 git remote add heroku 2nd URL
 git push heroku master
