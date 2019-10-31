@@ -1,4 +1,4 @@
-## First create a git repo & .gitignore file and include what is necessary in that file
+### First create a git repo & .gitignore file and include what is necessary in that file
 
 ```
 git init
@@ -6,11 +6,11 @@ git add .
 git commit -m “first commit”
 ```
 	
-## Create a Heroku account
+### Create a Heroku account
 
-## Install heroku CLI
+### Install Heroku CLI
 
-## Run following commands in CLI: 
+### Run following commands in the CLI: 
 
 ```
 heroku login```
