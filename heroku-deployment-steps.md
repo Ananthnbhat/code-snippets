@@ -33,3 +33,32 @@ git add .
 git commit -m "second commit"
 git push heroku master
 ```
+
+## Deployment checklist
+
+Make sure the app is listening to the port specified by Heroku
+
+```
+const PORT = process.env.port || 5000;
+app.listen(PORT);
+```
+
+Specify the node environment in the package.json file
+
+```
+  "engines": {
+    "node": "10.16.3",
+    "npm": "6.9.0"
+  }
+```
+
+Also specify the start script
+
+```
+  "scripts": {
+    "start": "node index.js",
+    "server": "nodemon index.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  }
+```
