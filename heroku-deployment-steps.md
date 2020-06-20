@@ -39,7 +39,7 @@ git push heroku master
 Make sure the app is listening to the port specified by Heroku
 
 ```
-const PORT = process.env.port || 5000;
+const PORT = process.env.PORT || 5000;
 app.listen(PORT);
 ```
 
@@ -52,13 +52,14 @@ Specify the node environment in the package.json file
   }
 ```
 
-Also specify the start script
+Also specify the start scripts, with post build script. Give the path to client based on your requirement.
 
 ```
   "scripts": {
     "start": "node index.js",
     "server": "nodemon index.js",
     "client": "npm start --prefix client",
-    "dev": "concurrently \"npm run server\" \"npm run client\""
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix ../client && npm run build --prefix ../client",
   }
 ```
